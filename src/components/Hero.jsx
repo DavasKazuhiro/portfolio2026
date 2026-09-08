@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaRegEnvelope } from 'react-icons/fa'
 import { profile } from '../data/content'
+import foto from '../assets/foto.JPG'
 import './Hero.css'
 
 const container = {
@@ -74,7 +75,7 @@ export default function Hero() {
           <motion.div className="img-home" variants={item}>
             {!imgError ? (
               <img
-                src={`${import.meta.env.BASE_URL}foto.jpg`}
+                src={foto}
                 alt={profile.name}
                 className="foto"
                 onError={() => setImgError(true)}
@@ -82,7 +83,7 @@ export default function Hero() {
             ) : (
               <div className="foto foto--fallback" aria-hidden="true">
                 DKN
-              </div>
+              </div> 
             )}
           </motion.div>
         </motion.div>
