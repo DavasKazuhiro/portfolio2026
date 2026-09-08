@@ -74,7 +74,7 @@ export default function Hero() {
           <motion.div className="img-home" variants={item}>
             {!imgError ? (
               <img
-                src="/foto.jpg"
+                src={`${import.meta.env.BASE_URL}foto.jpg`}
                 alt={profile.name}
                 className="foto"
                 onError={() => setImgError(true)}
