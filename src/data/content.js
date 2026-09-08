@@ -124,7 +124,7 @@ export const skills = {
     { nome: 'JavaScript', icon: 'js', nivel: 80 },
     { nome: 'Node.js', icon: 'node-js', nivel: 70 },
   ],
-  ferramentas: ['Git', 'MOA'],
+  ferramentas: ['Git', 'MOA', 'Linux', 'VSCode', 'Vite', 'Eclipse'],
   idiomas: [
     { nome: 'Português', nivel: 'Nativo' },
     { nome: 'Inglês', nivel: 'Intermediário-avançado' },
